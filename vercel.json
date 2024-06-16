@@ -1,0 +1,18 @@
+{
+       "version": 2,
+       "name": "real_estate",
+       "builds": [
+         { "src": "api/index.js", "use": "@vercel/node" },
+         { "src": "client/package.json", "use": "@vercel/static-build" }
+       ],
+       "routes": [
+         { "src": "/api/(.*)", "dest": "api/index.js" },
+         { "src": "/(.*)", "dest": "client/index.html" }
+       ],
+       "env": {
+        " MONGO" : "mongodb+srv://ubaidsyed:shah8470@mern-estate.3iw06no.mongodb.net/mern-estate",
+"JWT_SECRET" : "HSYgm3xj",
+"VITE_FIREBASE_API_KEY" : "AIzaSyB4pkqbYCqTs33YxSk7ONYSQnWOpeZFS8o"
+       }
+     }
+     
