@@ -10,7 +10,7 @@
          { "src": "/(.*)", "dest": "client/index.html" }
        ],
        "env": {
-        " MONGO" : "mongodb+srv://ubaidsyed:shah8470@mern-estate.3iw06no.mongodb.net/mern-estate",
+        " MONGO_URI" : "mongodb+srv://ubaidsyed:shah8470@mern-estate.3iw06no.mongodb.net/mern-estate",
 "JWT_SECRET" : "HSYgm3xj",
 "VITE_FIREBASE_API_KEY" : "AIzaSyB4pkqbYCqTs33YxSk7ONYSQnWOpeZFS8o"
        }
