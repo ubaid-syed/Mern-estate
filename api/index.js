@@ -11,6 +11,10 @@ const app = express();
 
 app.use(express.json());
 app.use(cookieParser());
+
+app.use("/", (req, res) => {
+  res.send("route is working");
+});
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("Connected to MongoDB!"))
